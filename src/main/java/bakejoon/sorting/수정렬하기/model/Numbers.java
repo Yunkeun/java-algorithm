@@ -10,6 +10,7 @@ public class Numbers {
 
 	public Numbers(List<Integer> numbers) {
 		ExceptionUtils.validateNumbers(numbers);
+		ExceptionUtils.validateDuplicatedNumbers(numbers);
 		this.numbers = numbers;
 	}
 

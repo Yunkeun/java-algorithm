@@ -4,15 +4,14 @@ import bakejoon.sorting.수정렬하기.utils.ExceptionUtils;
 
 public class NumberSize {
 
-	private int numberSize;
+	private final int numberSize;
 
 	public NumberSize(int numberSize) {
-		ExceptionUtils.validateNumber(numberSize);
+		ExceptionUtils.validateNumbersSize(numberSize);
 		this.numberSize = numberSize;
 	}
 
 	public int getNum() {
 		return numberSize;
 	}
-
 }
