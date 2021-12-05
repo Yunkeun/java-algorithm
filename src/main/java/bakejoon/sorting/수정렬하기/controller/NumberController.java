@@ -14,5 +14,6 @@ public class NumberController {
 		NumberSize numbersSize = InputView.getNumber(scanner);
 		Numbers numbers = InputView.getNumbers(scanner, numbersSize);
 		numbers.sortNumbers();
+		numbers.showNumbers();
 	}
 }

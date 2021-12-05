@@ -16,4 +16,8 @@ public class Numbers {
 	public void sortNumbers() {
 		Collections.sort(numbers);
 	}
+
+	public void showNumbers() {
+		numbers.forEach(System.out::println);
+	}
 }
