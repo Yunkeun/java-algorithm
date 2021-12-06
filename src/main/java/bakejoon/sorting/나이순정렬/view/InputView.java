@@ -18,14 +18,8 @@ public class InputView {
 
 	public static String[] getMemberInfo(Scanner scanner) {
 		String[] memberInfo;
-		int age;
-		String name;
 
 		memberInfo = getInput(scanner).split(" ");
-		age = getMemberAge(memberInfo);
-		name = getMemberName(memberInfo);
-		ExceptionUtil.validateMemberAge(age);
-		ExceptionUtil.validateMemberName(name);
 		return memberInfo;
 	}
 
