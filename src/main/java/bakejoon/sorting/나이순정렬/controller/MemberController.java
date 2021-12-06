@@ -15,7 +15,7 @@ public class MemberController {
 
 		membersNumber = InputView.getMembersNumber(scanner);
 		for (int i = MINIMUM_MEMBERS_NUMBER; i < membersNumber; i++) {
-			InputView.getMemberStatus(scanner);
+			InputView.getMemberInfo(scanner);
 		}
 	}
 }

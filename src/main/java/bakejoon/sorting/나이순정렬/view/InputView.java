@@ -16,25 +16,25 @@ public class InputView {
 		return memberNumber;
 	}
 
-	public static String[] getMemberStatus(Scanner scanner) {
-		String[] memberStatus;
+	public static String[] getMemberInfo(Scanner scanner) {
+		String[] memberInfo;
 		int age;
 		String name;
 
-		memberStatus = getInput(scanner).split(" ");
-		age = getMemberAge(memberStatus);
-		name = getMemberName(memberStatus);
+		memberInfo = getInput(scanner).split(" ");
+		age = getMemberAge(memberInfo);
+		name = getMemberName(memberInfo);
 		ExceptionUtil.validateMemberAge(age);
 		ExceptionUtil.validateMemberName(name);
-		return memberStatus;
+		return memberInfo;
 	}
 
-	public static int getMemberAge(String[] memberStatus) {
-		return Integer.parseInt(memberStatus[0]);
+	public static int getMemberAge(String[] memberInfo) {
+		return Integer.parseInt(memberInfo[0]);
 	}
 
-	public static String getMemberName(String[] memberStatus) {
-		return memberStatus[1];
+	public static String getMemberName(String[] memberInfo) {
+		return memberInfo[1];
 	}
 
 	public static String getInput(Scanner scanner) {
