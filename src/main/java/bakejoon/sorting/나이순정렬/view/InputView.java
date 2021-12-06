@@ -22,6 +22,7 @@ public class InputView {
 		String[] memberInfo;
 
 		memberInfo = getInput(scanner).split(SPACE);
+		ExceptionUtil.validateMemberInfo(memberInfo);
 		return memberInfo;
 	}
 

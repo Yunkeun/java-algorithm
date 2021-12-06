@@ -17,6 +17,12 @@ public class ExceptionUtil {
 		}
 	}
 
+	public static void validateMemberInfo(String[] memberInfo) {
+		if (memberInfo[0].isEmpty() || memberInfo[1].isEmpty()) {
+			throw new IllegalArgumentException();
+		}
+	}
+
 	public static void validateMemberAge(int age) {
 		if (age < MINIMUM_MEMBER_AGE || age > MAXIMUM_MEMBER_AGE) {
 			throw new IllegalArgumentException();
