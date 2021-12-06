@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class InputView {
 
+	public static final String SPACE = " ";
+
 	private InputView() {
 	}
 
@@ -19,7 +21,7 @@ public class InputView {
 	public static String[] getMemberInfo(Scanner scanner) {
 		String[] memberInfo;
 
-		memberInfo = getInput(scanner).split(" ");
+		memberInfo = getInput(scanner).split(SPACE);
 		return memberInfo;
 	}
 
@@ -31,7 +33,7 @@ public class InputView {
 		return memberInfo[1];
 	}
 
-	public static String getInput(Scanner scanner) {
+	private static String getInput(Scanner scanner) {
 		return scanner.nextLine();
 	}
 }

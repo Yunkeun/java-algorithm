@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class Application {
 
 	public static void main(String[] args) {
+		Scanner scanner;
 
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		MemberController.controlMember(scanner);
 	}
 }
