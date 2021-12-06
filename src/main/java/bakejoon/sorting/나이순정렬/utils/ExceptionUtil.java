@@ -12,7 +12,7 @@ public class ExceptionUtil {
 	}
 
 	public static void validateMembersNumber(int membersNumber) {
-		if (MINIMUM_MEMBERS_NUMBER < 1 || membersNumber > MAXIMUM_MEMBERS_NUMBER) {
+		if (membersNumber < MINIMUM_MEMBERS_NUMBER || membersNumber > MAXIMUM_MEMBERS_NUMBER) {
 			throw new IllegalArgumentException();
 		}
 	}
