@@ -14,4 +14,8 @@ public class Members {
 	public void sortByAge() {
 		members.sort(Comparator.comparing(Member::getAge));
 	}
+
+	public void printSortedMember() {
+		members.forEach(Member::printMember);
+	}
 }

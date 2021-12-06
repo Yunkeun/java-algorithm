@@ -21,6 +21,7 @@ public class MemberController {
 		membersNumber = InputView.getMembersNumber(scanner);
 		members = getMembers(scanner, membersNumber);
 		members.sortByAge();
+		members.printSortedMember();
 	}
 
 	public static Member getMember(String[] memberInfo) {

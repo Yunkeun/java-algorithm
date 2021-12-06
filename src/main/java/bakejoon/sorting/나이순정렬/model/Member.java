@@ -1,6 +1,7 @@
 package bakejoon.sorting.나이순정렬.model;
 
 import bakejoon.sorting.나이순정렬.utils.ExceptionUtil;
+import bakejoon.sorting.나이순정렬.view.OutputView;
 
 public class Member {
 
@@ -16,5 +17,9 @@ public class Member {
 
 	public int getAge() {
 		return age;
+	}
+
+	public void printMember() {
+		OutputView.printMember(age, name);
 	}
 }
