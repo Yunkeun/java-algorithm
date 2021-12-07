@@ -5,4 +5,7 @@ public class OutputView {
 	private OutputView() {
 	}
 
+	public static void printResult(int sum) {
+		System.out.println(sum);
+	}
 }
