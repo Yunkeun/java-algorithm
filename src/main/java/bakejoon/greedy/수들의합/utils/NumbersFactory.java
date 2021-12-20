@@ -5,14 +5,11 @@ public class NumbersFactory {
 	private NumbersFactory() {
 	}
 
-	public static int makeMax(int sum) {
+	public static long makeMax(long sum) {
 		long currentSum = 0;
-		int addNumber = 0;
+		long addNumber = 0;
 		while (sum >= currentSum) {
 			currentSum += (++addNumber);
-		}
-		if (currentSum == sum) {
-			return addNumber;
 		}
 		return addNumber - 1;
 	}

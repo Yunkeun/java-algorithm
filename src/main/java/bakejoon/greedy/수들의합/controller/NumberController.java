@@ -11,7 +11,7 @@ public class NumberController {
 	}
 
 	public static void controlNumber(Scanner scanner) {
-		int sum = InputView.inputSum(scanner);
+		long sum = InputView.inputSum(scanner);
 		OutputView.printMax((NumbersFactory.makeMax(sum)));
 	}
 }

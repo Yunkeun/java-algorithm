@@ -5,7 +5,7 @@ public class OutputView {
 	private OutputView() {
 	}
 
-	public static void printMax(int max) {
+	public static void printMax(long max) {
 		System.out.println(max);
 	}
 }

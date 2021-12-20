@@ -8,9 +8,9 @@ public class InputView {
 	private InputView() {
 	}
 
-	public static int inputSum(Scanner scanner) {
+	public static long inputSum(Scanner scanner) {
 		String inputNumber = scanner.nextLine();
 		InputException.validateNumber(inputNumber);
-		return Integer.parseInt(inputNumber);
+		return Long.parseLong(inputNumber);
 	}
 }
