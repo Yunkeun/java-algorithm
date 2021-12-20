@@ -1,5 +1,6 @@
 package bakejoon.greedy.수들의합.view;
 
+import bakejoon.greedy.수들의합.utils.InputException;
 import java.util.Scanner;
 
 public class InputView {
@@ -9,6 +10,7 @@ public class InputView {
 
 	public static int inputSum(Scanner scanner) {
 		String inputNumber = scanner.nextLine();
+		InputException.validateNumber(inputNumber);
 		return Integer.parseInt(inputNumber);
 	}
 }
